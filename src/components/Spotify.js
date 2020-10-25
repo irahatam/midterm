@@ -91,8 +91,6 @@ class Spotify extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          {/* Logo not showing up for some reason??? need to fix this */}
-          {/* <img src="logo.svg" className="App-logo" alt="logo" /> */}
           {!this.state.token && (
             <a
               className="btn"
@@ -111,7 +109,7 @@ class Spotify extends Component {
             />
           )}
           {this.state.no_data && (
-            <p> No one is playing a song in Spotify :-( </p>
+            <p> No one is playing a song in Spotify :-) </p>
           )}
         </header>
       </div>

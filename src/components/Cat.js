@@ -6,14 +6,15 @@ import "../App.css";
 
 function Cat() {
   const [flag, triggerFlag] = useState(false);
+  const keyword = "cat";
   return (
     <div className="App">
-      <h5> Here's a cat GIF for you :-)</h5>
+      <h5> Here's a {keyword} GIF for you :-)</h5>
       <br />
-      <Giphy tag="cat" triggers={[flag]} />
+      <Giphy tag={keyword} triggers={[flag]} />
       <br />
       <a
-        className="btn"
+        className="btn_gif"
         onClick={() => triggerFlag(!flag)}
       >
         Need more?

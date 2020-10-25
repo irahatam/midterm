@@ -9,6 +9,9 @@ const Player = props => {
 
   return (
     <div className="App">
+       <br />
+      <h2 className="np"> Currently playing: </h2>
+      <br />
       <div className="main-wrapper">
         <div className="np_img">
           <img src={props.item.album.images[0].url} />
