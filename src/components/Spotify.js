@@ -91,8 +91,6 @@ class Spotify extends Component {
     return (
       <div className="App">
         <header className="App-header">
-          <h2> Let your guests know what jam is playing right now! </h2>
-          <br></br>
           {/* Logo not showing up for some reason??? need to fix this */}
           {/* <img src="logo.svg" className="App-logo" alt="logo" /> */}
           {!this.state.token && (
@@ -102,7 +100,7 @@ class Spotify extends Component {
                 "%20"
               )}&response_type=token&show_dialog=true`}
             >
-              let's go!
+              Let your guests know what jam is playing right now!
             </a>
           )}
           {this.state.token && !this.state.no_data && (
@@ -113,7 +111,7 @@ class Spotify extends Component {
             />
           )}
           {this.state.no_data && (
-            <p> No one is playing a song in Spotify! </p>
+            <p> No one is playing a song in Spotify :-( </p>
           )}
         </header>
       </div>
