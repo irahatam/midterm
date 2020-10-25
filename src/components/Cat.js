@@ -9,16 +9,19 @@ function Cat() {
   const keyword = "cat";
   return (
     <div className="App">
-      <h5> Here's a {keyword} GIF for you :-)</h5>
       <br />
-      <Giphy tag={keyword} triggers={[flag]} />
+      <h3> Need a {keyword} GIF to spice up the party?</h3>
       <br />
       <a
         className="btn_gif"
         onClick={() => triggerFlag(!flag)}
       >
-        Need more?
+        I WANT MORE!
       </a>
+      <br />
+      <br />
+      <Giphy tag={keyword} triggers={[flag]} />
+      <br />
     </div>
   );
 }

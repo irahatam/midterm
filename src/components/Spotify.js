@@ -92,6 +92,7 @@ class Spotify extends Component {
       <div className="App">
         <header className="App-header">
           {!this.state.token && (
+            // I want to add an image here to only show up in homescreen but idk how???
             <a
               className="btn"
               href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(

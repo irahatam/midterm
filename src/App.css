@@ -5,30 +5,23 @@
   box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-style: normal;
+  background-color: #E57B9F;
 }
-/* 
-html, body {
-  height: 100%;
-} */
 
 .App {
   text-align: center;
 }
 
 .App-header {
-  background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  /* font-size: calc(10px + 2vmin); */
   color: white;
 }
 
 body {
-  background-color: #333;
   color: #eee;
   font-size: 3vmin;
 }
@@ -56,21 +49,16 @@ body {
   height: 100%;
 }
 
-.main-container {
-  flex: 1;
-}
-
-.np{
-  font-style: normal;
+a{
+  text-decoration: none;
 }
 
 /* Buttons */
 
 .btn {
-  background-color: transparent;
+  background-color: #619CEE;
   border-radius: 2em;
-  border: 0.2em solid #1ecd97;
-  color: #1ecd97;
+  color: white;
   cursor: pointer;
   font-size: 3vmin;
   padding: 0.7em 1.5em;
@@ -79,25 +67,23 @@ body {
 }
 
 .btn:hover {
-  background: #1ecd97;
-  color: #333;
-}
-
-/* GIF */
-.gif_img {
-  max-width: 200px;
-  max-height: 200px;
+  background: #F4E256;
+  color: #2C2C2C;
 }
 
 .btn_gif {
-  background-color: #6f01d6;;
+  background-color: #D5F279;
   border-radius: 2em;
-  /* border: 0.2em solid #1ecd97; */
-  color: white;
+  color: #2C2C2C;
   cursor: pointer;
   font-size: 2.5vmin;
   padding: 0.7em 1.5em;
   transition: all 0.25s ease;
+}
+
+.btn_gif:hover {
+  background-color: #EC5540;
+  color: white;
 }
 
 /* Player */
