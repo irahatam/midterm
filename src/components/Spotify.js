@@ -1,19 +1,14 @@
 import React, { Component } from "react";
 import * as $ from "jquery";
-import hash from "./hash";
-import Player from "./Player";
-import { logDOM } from "@testing-library/react";
-
+import hash from "../hash";
+import Player from "../Player";
+import "../App.css";
 
 // Spotify API reqs
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "ca0385add78d4c3580d3fb788b16c1e2";
 const redirectUri = "http://localhost:3000/callback";
-const scopes = [
-    "user-top-read",
-    "user-read-currently-playing",
-    "user-read-playback-state",
-];
+const scopes = ["user-top-read", "user-read-currently-playing", "user-read-playback-state",];
 
 class Spotify extends Component {
   constructor() {
@@ -36,8 +31,6 @@ class Spotify extends Component {
     this.getCurrentlyPlaying = this.getCurrentlyPlaying.bind(this);
     this.tick = this.tick.bind(this);
   }
-
-
 
   componentDidMount() {
     // Set token
@@ -83,7 +76,6 @@ class Spotify extends Component {
           });
           return;
         }
-
         // Checks if playing a song
         this.setState({
           item: data.item,
@@ -99,16 +91,18 @@ class Spotify extends Component {
     return (
       <div className="App">
         <header className="App-header">
-            {/* Logo not showing up for some reason??? need to fix this */}
+          <h2> Let your guests know what jam is playing right now! </h2>
+          <br></br>
+          {/* Logo not showing up for some reason??? need to fix this */}
           {/* <img src="logo.svg" className="App-logo" alt="logo" /> */}
           {!this.state.token && (
             <a
-              className="btn btn--loginApp-link"
+              className="btn"
               href={`${authEndpoint}?client_id=${clientId}&redirect_uri=${redirectUri}&scope=${scopes.join(
                 "%20"
               )}&response_type=token&show_dialog=true`}
             >
-              Login to Spotify
+              let's go!
             </a>
           )}
           {this.state.token && !this.state.no_data && (
@@ -119,9 +113,7 @@ class Spotify extends Component {
             />
           )}
           {this.state.no_data && (
-            <p>
-              You need to be playing a song on Spotify, for something to appear here.
-            </p>
+            <p> No one is playing a song in Spotify! </p>
           )}
         </header>
       </div>

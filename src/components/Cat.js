@@ -1,25 +1,22 @@
 import React, { useState } from "react";
 import ReactDOM from "react-dom";
-import { Button, Typography } from "@material-ui/core";
 import Giphy from "react-hooks-giphy";
+import "../App.css";
 
 
 function Cat() {
   const [flag, triggerFlag] = useState(false);
   return (
     <div className="App">
-      <Typography variant="h5" gutterBottom>
-        This cat represents your mood listening to the song above:
-      </Typography>
+      <h5> Here's a cat GIF to brighten up your party!</h5>
         <Giphy tag="cat" triggers={[flag]} />
         <br />
-        <Button
-          variant="contained"
-          color="primary"
+        <a
+          className="btn"
           onClick={() => triggerFlag(!flag)}
         >
           Need more?
-        </Button>
+        </a>
     </div>
   );
 }

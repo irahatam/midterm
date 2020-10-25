@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  animation: App-logo-spin infinite 20s linear;
+  /* animation: App-logo-spin infinite 20s linear; */
   height: 40vmin;
   pointer-events: none;
 }
@@ -23,14 +29,14 @@
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
+/* @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
   }
   to {
     transform: rotate(360deg);
   }
-}
+} */
 
 * {
   box-sizing: border-box;
@@ -70,10 +76,6 @@ body {
 .btn:hover {
   background: #1ecd97;
   color: #333;
-}
-
-.btn--login {
-  margin: 0 auto;
 }
 
 /** Background **/

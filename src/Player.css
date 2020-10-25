@@ -1,31 +1,36 @@
-/** Now Playing **/
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
 
-.now-playing__name {
+* {
+  font-family: 'Nunito', sans-serif;
+}
+
+/** Now Playing **/
+.np_name {
   font-size: 1.5em;
   margin-bottom: 0.2em;
 }
 
-.now-playing__artist {
+.np_artist {
   margin-bottom: 1em;
 }
 
-.now-playing__status {
+.status {
   margin-bottom: 1em;
 }
 
-.now-playing__img {
+.np_img {
   float: left;
   margin-right: 10px;
   text-align: right;
   width: 45%;
 }
 
-.now-playing__img img {
+.np_img img {
   max-width: 80vmin;
   width: 100%;
 }
 
-.now-playing__side {
+.np_desc {
   margin-left: 5%;
   width: 45%;
 }

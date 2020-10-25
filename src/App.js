@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter as Router, Switch,Route } from "react-router-dom";
 import './App.css';
-import Cat from "./Cat";
-import Spotify from "./Spotify";
+import Spotify from "./components/Spotify";
+
 
 function App() {
   return (
@@ -11,7 +11,6 @@ function App() {
         <Switch>
           <Route path="/">
             <Spotify />
-            <Cat />
           </Route>
         </Switch>
       </Router>
