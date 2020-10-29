@@ -8,7 +8,7 @@ import "../App.css";
 const authEndpoint = "https://accounts.spotify.com/authorize";
 const clientId = "ca0385add78d4c3580d3fb788b16c1e2";
 const redirectUri = "http://localhost:3000/callback";
-const scopes = ["user-top-read", "user-read-currently-playing", "user-read-playback-state",];
+const scopes = ["user-read-currently-playing", "user-read-playback-state",];
 
 class Spotify extends Component {
   constructor() {
@@ -23,7 +23,6 @@ class Spotify extends Component {
         artists: [{ name: "" }],
         duration_ms: 0
       },
-      is_playing: "Paused",
       progress_ms: 0,
       no_data: false,
     };
@@ -105,12 +104,11 @@ class Spotify extends Component {
           {this.state.token && !this.state.no_data && (
             <Player
               item={this.state.item}
-              is_playing={this.state.is_playing}
               progress_ms={this.state.progress_ms}
             />
           )}
           {this.state.no_data && (
-            <p> No one is playing a song in Spotify :-) </p>
+            <p> No one is playing a song in Spotify :-( </p>
           )}
         </header>
       </div>

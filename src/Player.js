@@ -21,16 +21,13 @@ const Player = props => {
           <div className="np_artist">
             {props.item.artists[0].name}
           </div>
-          <div className="status">
-            {props.is_playing ? "Song is playing" : "Song is paused"}
-          </div>
           <div className="progress">
-            <div className="progress__bar" style={progressBarStyles} />
+            <div className="progress_bar" style={progressBarStyles} />
           </div>
         </div>
         <br />
-        <Cat />
       </div>
+      <Cat className="GIF"/>
     </div>
   );
 }

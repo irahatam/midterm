@@ -1,7 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
 
 * {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Karla', sans-serif;
   box-sizing: border-box;
   margin: 0;
   padding: 0;
@@ -96,10 +96,6 @@ a{
   margin-bottom: 1em;
 }
 
-.status {
-  margin-bottom: 1em;
-}
-
 .np_img {
   float: left;
   margin-right: 10px;
@@ -118,13 +114,31 @@ a{
 }
 
 .progress {
-  border: 1px solid #eee;
+  border: 1px solid #D5F279;
   height: 6px;
   border-radius: 3px;
   overflow: hidden;
 }
 
-.progress__bar {
-  background-color: #eee;
+.progress_bar {
+  background-color: #D5F279;
   height: 4px;
+}
+
+/* Responsiveness */
+@media screen and (max-width: 640px) {
+  .App .GIF{
+    width: 30%;
+    height: auto;
+  }
+
+  .main-wrapper{
+    display: flex;
+    flex-direction: column;
+  }
+
+  .np_img{
+    display: flex;
+    justify-content: flex-start;
+  }
 }

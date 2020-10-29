@@ -3,7 +3,6 @@ import ReactDOM from "react-dom";
 import Giphy from "react-hooks-giphy";
 import "../App.css";
 
-
 function Cat() {
   const [flag, triggerFlag] = useState(false);
   const keyword = "cat";
