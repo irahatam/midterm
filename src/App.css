@@ -127,15 +127,8 @@ a{
 
 /* Responsiveness */
 @media screen and (max-width: 640px) {
-  .App .GIF{
-    width: 30%;
-    height: auto;
-  }
-
   .main-wrapper{
     display: flex;
     flex-direction: column;
   }
-
-  
 }

@@ -3,7 +3,7 @@ import "./App.css";
 import Cat from "./components/Cat";
 
 const Player = props => {
-  const progressBarStyles = {
+  const progressBar = {
     width: (props.progress_ms * 100 / props.item.duration_ms) + '%'
   };
 
@@ -22,12 +22,12 @@ const Player = props => {
             {props.item.artists[0].name}
           </div>
           <div className="progress">
-            <div className="progress_bar" style={progressBarStyles} />
+            <div className="progress_bar" style={progressBar} />
           </div>
         </div>
         <br />
       </div>
-      <Cat className="GIF"/>
+      <Cat />
     </div>
   );
 }
