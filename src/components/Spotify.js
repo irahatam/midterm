@@ -45,11 +45,6 @@ class Spotify extends Component {
     this.interval = setInterval(() => this.tick(), 5000);
   }
 
-  componentWillUnmount() {
-    // clear the interval to save resources
-    clearInterval(this.interval);
-  }
-
   tick() {
     if(this.state.token) {
       this.getCurrentlyPlaying(this.state.token);
