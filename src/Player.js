@@ -10,7 +10,7 @@ const Player = props => {
   return (
     <div className="App">
        <br />
-      <h2 className="np"> Currently playing: </h2>
+      <h3> Now playing: </h3>
       <br />
       <div className="main-wrapper">
         <div className="np_img">

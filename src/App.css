@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Karla&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Karla:wght@400;700&display=swap');
 
 * {
   font-family: 'Karla', sans-serif;
@@ -54,7 +54,6 @@ a{
 }
 
 /* Buttons */
-
 .btn {
   background-color: #619CEE;
   border-radius: 2em;
@@ -87,7 +86,13 @@ a{
 }
 
 /* Player */
+h3 {
+  color: #2C2C2C;
+  font-weight: 700;
+}
+
 .np_name {
+  color: #F4E256;
   font-size: 1.5em;
   margin-bottom: 0.2em;
 }
@@ -124,6 +129,7 @@ a{
   background-color: #D5F279;
   height: 4px;
 }
+
 
 /* Responsiveness */
 @media screen and (max-width: 640px) {
