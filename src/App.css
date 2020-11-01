@@ -137,8 +137,5 @@ a{
     flex-direction: column;
   }
 
-  .np_img{
-    display: flex;
-    justify-content: flex-start;
-  }
+  
 }

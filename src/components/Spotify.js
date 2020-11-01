@@ -6,7 +6,8 @@ import "../App.css";
 
 // Spotify API reqs
 const authEndpoint = "https://accounts.spotify.com/authorize";
-const clientId = "ca0385add78d4c3580d3fb788b16c1e2";
+// const clientId = "ca0385add78d4c3580d3fb788b16c1e2";
+const clientId = process.env.SPOTIFY_API_KEY;
 const redirectUri = "http://localhost:3000/callback";
 const scopes = ["user-read-currently-playing", "user-read-playback-state",];
 
@@ -34,7 +35,6 @@ class Spotify extends Component {
   componentDidMount() {
     // Set token
     let _token = hash.access_token;
-
     if (_token) {
       // Set token
       this.setState({
@@ -42,8 +42,6 @@ class Spotify extends Component {
       });
       this.getCurrentlyPlaying(_token);
     }
-
-    // set interval for polling every 5 seconds
     this.interval = setInterval(() => this.tick(), 5000);
   }
 
