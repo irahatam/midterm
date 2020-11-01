@@ -36,7 +36,6 @@ class Spotify extends Component {
     // Set token
     let _token = hash.access_token;
     if (_token) {
-      // Set token
       this.setState({
         token: _token
       });
