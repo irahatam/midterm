@@ -4,6 +4,10 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 Have you ever hosted a party in the past and have guests wonder what song is currently playing? 
 
+### Demo
+
+<img src="../public/cat.gif"/>
+
 ### Never fear, Cat Spotify is here!
 
 With Cat Spotify, you can connect your Spotify account and run the scripts to automatically display currently
@@ -13,3 +17,4 @@ Spotify account and we'll take it from there!
 
 *Disclamer: The COVID-19 Pandemic is currently happening around the world, I wouldn't recommend you throwing
 a party right now, but this could be useful for you in the future! #StaySafe and #WearaMask :)*
+
