@@ -6,7 +6,7 @@ Have you ever hosted a party in the past and have guests wonder what song is cur
 
 ### Demo
 
-<img src="../public/cat.gif"/>
+<img src="./public/cat.gif"/>
 
 ### Never fear, Cat Spotify is here!
 
