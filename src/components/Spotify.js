@@ -6,8 +6,7 @@ import "../App.css";
 
 // Spotify API reqs
 const authEndpoint = "https://accounts.spotify.com/authorize";
-const clientId = "ca0385add78d4c3580d3fb788b16c1e2";
-//const clientId = process.env.SPOTIFY_API_KEY;
+const clientId = process.env.SPOTIFY_API_KEY;
 const redirectUri = "http://localhost:3000/callback";
 const scopes = ["user-read-currently-playing", "user-read-playback-state",];
 
